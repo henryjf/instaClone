@@ -1,1 +1,12 @@
 <h2 class="title">Add Images</h2>
+
+<form ng-submit="addImageItem(image)">
+  <img ng-src="http://placehold.it/100x100/{{hash}}" alt="" placeholder="Image url"/>
+  <p class="control">
+    <input ng-model="image.title" type="text" class="input" placeholder="Image Title">
+  </p>
+  <p class="control">
+    <input ng-model="image.desc" type="text" class="input" placeholder="Image Description">
+  </p>
+
+</form>
