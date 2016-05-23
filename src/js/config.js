@@ -16,7 +16,7 @@ function config($stateProvider, $urlRouterProvider) {
       controller: 'AddController'
     })
     .state('details', {
-      url: '/details',
+      url: '/details/:imageId',
       templateUrl: 'templates/details.tpl.html',
       controller: 'DetailsController'
     })

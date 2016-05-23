@@ -1,8 +1,8 @@
-function DetailsController () {
+function DetailsController ($scope, $http, URL, $stateParams) {
 
-
+console.log($stateParams);
 
 }
 
-DetailsController.$inject = [];
+DetailsController.$inject = ['$scope', '$http', 'URL', '$stateParams'];
 export { DetailsController };
