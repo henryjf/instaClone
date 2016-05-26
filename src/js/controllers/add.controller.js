@@ -1,19 +1,23 @@
-function AddController ($scope, $http, URL, $state) {
+function AddController ($http, URL, $state) {
 
-  $scope.addImage = function (imageObj) {
+    let vm = this;
 
-    $http.post(URL, imageObj).then( (res) => {
+    vm.addImageItem = addImageItem;
+
+    function addImageItem (image) {
+console.log('form submitted');
+    $http.post(URL, image).then( (res) => {
       console.log(res);
 
 
       //Clears the form
       // $scope.image = {};
       //route the user to the home page
-      $state.go('home');
+      // $state.go('home');
     });
   }
 
 }
 
-AddController.$inject = ['$scope', '$http', 'URL', '$state'];
+AddController.$inject = ['$http', 'URL', '$state'];
 export { AddController };

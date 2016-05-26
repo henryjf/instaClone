@@ -1,6 +1,6 @@
 <h2 class="title">Add Image</h2>
 
-<form ng-submit="addImageItem(image)">
+<form ng-submit="vm.addImageItem(image)">
 
   <p class="control">
   <input ng-model="image.url" type="text" class="input" placeholder="Image url"/>
@@ -14,3 +14,16 @@
   <button class="button is-primary">Add Image</button>
 
 </form>
+
+<!-- <hr>
+ <div class="row text-center">
+   <div class="col-md-3 col-sm-6 hero-feature" ng-repeat="item in vm.items">
+     <div class="thumbnail">
+       <img ng-src="{{ item.photo }}" width="300">
+       <div class="caption">       <h3>{{ item.name }}</h3>
+         <p>${{ item.price }}</p>
+         <p>{{ item.location }}</p>
+       </div>
+     </div>
+   </div>
+ </div> -->
