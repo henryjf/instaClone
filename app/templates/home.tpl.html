@@ -1,19 +1,9 @@
 <h2 class="title">All My Pics</h2>
 
+<div class="container" ng-controller="HomeController as vm">
+  <div class="image" ng-repeat="image in vm.images">
+    <img ng-src="{{image.url}}" >
 
+  </div>
 
-
-  <!-- <a href="#/details/{{i._id}}" class="card" ng-repeat="i in vm.allImages"> -->
-    <!-- <figure class="image is-128x128">
-      <img ng-src="http://placehold.it/256x256{{hash}}" alt=""> -->
-        <!-- <div class="media">
-          <div class="media-content">
-            <div class="content">
-              <p>
-                <strong>{{i.title}}</strong> <small>{{i.desc}}</small>
-              </p>
-            </div>
-          </div>
-        </div> -->
-    <!-- </figure> -->
-  <!-- </a> -->
+</div>
