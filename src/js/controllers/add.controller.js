@@ -1,6 +1,13 @@
 function AddController ($http, URL, $state) {
 
     let vm = this;
+<<<<<<< HEAD
+=======
+    this.addImage = addImage;
+
+
+    function addImage (imageObj) {
+>>>>>>> master
 
     vm.addImageItem = addImageItem;
 
