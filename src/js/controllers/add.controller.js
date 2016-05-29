@@ -1,6 +1,10 @@
-function AddController ($scope, $http, URL, $state) {
+function AddController ($http, URL, $state) {
 
-  $scope.addImage = function (imageObj) {
+    let vm = this;
+    this.addImage = addImage;
+
+
+    function addImage (imageObj) {
 
     $http.post(URL, imageObj).then( (res) => {
       console.log(res);
@@ -15,5 +19,5 @@ function AddController ($scope, $http, URL, $state) {
 
 }
 
-AddController.$inject = ['$scope', '$http', 'URL', '$state'];
+AddController.$inject = ['$http', 'URL', '$state'];
 export { AddController };

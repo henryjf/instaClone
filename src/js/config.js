@@ -8,17 +8,17 @@ function config($stateProvider, $urlRouterProvider) {
     .state('home', {
       url: '/',
       templateUrl: 'templates/home.tpl.html',
-      controller: 'HomeController'
+      controller: 'HomeController as vm'
     })
     .state('add', {
       url: '/add',
       templateUrl: 'templates/add.tpl.html',
-      controller: 'AddController'
+      controller: 'AddController as vm'
     })
     .state('details', {
       url: '/details',
       templateUrl: 'templates/details.tpl.html',
-      controller: 'DetailsController'
+      controller: 'DetailsController as vm'
     })
 }
 

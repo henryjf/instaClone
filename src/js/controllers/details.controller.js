@@ -1,8 +1,10 @@
-function DetailsController ($scope, $http, URL, $stateParams) {
+function DetailsController ($http, URL, $stateParams) {
 
+  let vm = this;
+  
 console.log($stateParams);
 
 }
 
-DetailsController.$inject = ['$scope', '$http', 'URL', '$stateParams'];
+DetailsController.$inject = ['$http', 'URL', '$stateParams'];
 export { DetailsController };

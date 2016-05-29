@@ -1,14 +1,16 @@
-function HomeController ($scope, $http, URL) {
+function HomeController ($http, URL) {
+
+  let vm = this;
 
   init();
 
   function init() {
     $http.get(URL).then( (res) =>{
-      $scope.allImages = res.data;
+      vm.allImages = res.data;
     });
   }
 
 }
 
-HomeController.$inject = ['$scope', '$http', 'URL'];
+HomeController.$inject = ['$http', 'URL'];
 export { HomeController };
