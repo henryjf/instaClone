@@ -2,24 +2,14 @@
 
 <div class="card is-fullwidth">
 
-    <!-- <img src="{{vm.detailsImage.image.url}}" alt="" /> -->
     <img class="detailsImage" src="{{ vm.detailsImage.url }}">
 
   <div class="card-content">
     <div class="content">Title: {{ vm.detailsImage.title }}</div>
-  </div>
     <div class="content">Description: {{ vm.detailsImage.desc }}</div>
+  </div>
+
   <footer class="card-footer">
     <a class="card-footer-item" ng-click="vm.deleteImage(vm.detailsImage._id)">Delete</a>
   </footer>
 </div>
-
-      <!-- <div class="tile is-parent">
-        <article class="tile is-child notification is-info">
-          <p class="title">Middle tile</p>
-          <p class="subtitle">With an image</p>
-          <figure class="image is-4by3">
-            <img ng-src="http://placehold.it/640x480">
-          </figure>
-        </article>
-      </div> -->

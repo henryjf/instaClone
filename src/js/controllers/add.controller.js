@@ -7,7 +7,7 @@ function AddController ($http, URL, $state) {
     function addImage (imageObj) {
 
     $http.post(URL, imageObj).then( (res) => {
-      console.log(res);
+      // console.log(res);
 
 
       //Clears the form
