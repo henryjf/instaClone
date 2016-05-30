@@ -9,6 +9,7 @@ function HomeController ($http, URL) {
       vm.allImages = res.data;
     });
   }
+  
 
 }
 

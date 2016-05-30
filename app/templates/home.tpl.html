@@ -1,18 +1,13 @@
 <h2 class="title">All My Pics</h2>
 
 <div class="container" ng-controller="HomeController as vm">
-  <div class="image" ng-dblclick="vm.liked(image)" ng-repeat="image in vm.allImages">
-        <span class="likes">{{ image.likes }}</span>
-        <i class="fa fa-heart" ng-if="vm.liking === image._id"></i>
-        <img ng-src="{{ image.url }}">
-        <p>{{ image.desc }}</p>
-      </div>
-  <!-- <a href="/#/details/{{image._id}}" ng-repeat="image in vm.allImages"> -->
+
+  <a href="/#/details/{{image._id}}" ng-repeat="image in vm.allImages">
     <img class="home_images" ng-src="{{image.url}}">
   </a>
-  <footer class="card-footer">
-    <a href="/#/details/{{image._id}}" ng-repeat="image in vm.allImages">Details</a>
-  </footer>
+
+  
+  <!-- <button ng-dblclick="clicked()" class="button is-medium is-info">{{buttonStatus}}likes  {{label}}</button> -->
 </div>
 
 <!-- <div class="container" ng-controller="HomeController as vm">
