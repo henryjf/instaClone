@@ -1,1 +1,13 @@
 <h2 class =title>Detail Page</h2>
+
+<div class="card is-fullwidth">
+  <header class="card-header">
+    <p class="card-header-title">{{ vm.detailsImage.image }}</p>
+  </header>
+  <div class="card-content">
+    <div class="content">Description{{ vm.detailsImage.desc }}</div>
+  </div>
+  <footer class="card-footer">
+    <a class="card-footer-item" ng-click="vm.deleteItem(vm.singleItem._id)">Delete</a>
+  </footer>
+</div>
