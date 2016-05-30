@@ -6,7 +6,7 @@ function HomeController ($http, URL) {
 
   function init() {
     $http.get(URL).then( (res) =>{
-      vm.images = res.data;
+      vm.allImages = res.data;
     });
   }
 

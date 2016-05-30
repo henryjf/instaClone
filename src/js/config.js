@@ -3,7 +3,6 @@ function config($stateProvider, $urlRouterProvider) {
   $urlRouterProvider.otherwise('/');
 
   //define app states
-
   $stateProvider
     .state('home', {
       url: '/',
@@ -16,10 +15,10 @@ function config($stateProvider, $urlRouterProvider) {
       controller: 'AddController as vm'
     })
     .state('details', {
-      url: '/details',
+      url: '/details/:imageId',
       templateUrl: 'templates/details.tpl.html',
       controller: 'DetailsController as vm'
-    })
+    });
 }
 
 config.$inject = ['$stateProvider', '$urlRouterProvider'];

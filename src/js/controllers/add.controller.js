@@ -2,14 +2,11 @@ function AddController ($http, URL, $state) {
 
     let vm = this;
     // this.addImage = addImage;
-    vm.addImageItem = addImageItem;
+    vm.addImage = addImage;
 
-    // function addImage (imageObj) {
+    function addImage (imageObj) {
 
-
-    function addImageItem (image) {
-      console.log('form submitted');
-    $http.post(URL, image).then( (res) => {
+    $http.post(URL, imageObj).then( (res) => {
       console.log(res);
 
 
@@ -20,7 +17,7 @@ function AddController ($http, URL, $state) {
     });
   }
 
-  // }
+
 }
 AddController.$inject = ['$http', 'URL', '$state'];
 export { AddController };

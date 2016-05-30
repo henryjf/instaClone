@@ -9,7 +9,7 @@ import { DetailsController } from './controllers/details.controller';
 //import Config
 import { config } from './config';
 
-const url ='https://secret-forest-21470.herokuapp.com/collections/instaClone343'
+const url = 'https://secret-forest-21470.herokuapp.com/collections/instaClone343/';
 
 angular
 //setter for a module
@@ -22,5 +22,5 @@ angular
   //register Controllers
   .controller('HomeController', HomeController)
   .controller('AddController', AddController)
-  .controller('DetailsController',DetailsController)
+  .controller('DetailsController', DetailsController)
   ;

@@ -15,9 +15,8 @@ function DetailsController ($http, URL, $stateParams, $state) {
   function deleteImage (imageId) {
     $http.delete(URL + imageId).then( (res) =>{
       $state.go('home')
-    })
+    });
   }
-// console.log($stateParams);
 
 }
 
