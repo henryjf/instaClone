@@ -1,6 +1,10 @@
 @import 'bulma';
 
 .container {
-  width: 500px;
+  width: 600px;
   margin: 20px auto;
+
+  .home_images {
+    width: 250px;
+  }
 }

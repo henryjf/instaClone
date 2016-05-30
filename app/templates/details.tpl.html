@@ -1,14 +1,25 @@
 <h2 class =title>Detail Page</h2>
 
 <div class="card is-fullwidth">
-  <header class="card-header">
+
     <!-- <img src="{{vm.detailsImage.image.url}}" alt="" /> -->
-    <p class="card-header-title">{{ vm.detailsImage.url }}</p>
-  </header>
+    <img class="detailsImage" src="{{ vm.detailsImage.url }}">
+
   <div class="card-content">
-    <div class="content">Description{{ vm.detailsImage.desc }}</div>
+    <div class="content">Title: {{ vm.detailsImage.title }}</div>
   </div>
+    <div class="content">Description: {{ vm.detailsImage.desc }}</div>
   <footer class="card-footer">
-    <a class="card-footer-item" ng-click="vm.deleteItem(vm.singleItem._id)">Delete</a>
+    <a class="card-footer-item" ng-click="vm.deleteImage(vm.detailsImage._id)">Delete</a>
   </footer>
 </div>
+
+      <!-- <div class="tile is-parent">
+        <article class="tile is-child notification is-info">
+          <p class="title">Middle tile</p>
+          <p class="subtitle">With an image</p>
+          <figure class="image is-4by3">
+            <img ng-src="http://placehold.it/640x480">
+          </figure>
+        </article>
+      </div> -->
